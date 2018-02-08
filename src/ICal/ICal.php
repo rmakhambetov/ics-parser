@@ -673,8 +673,8 @@ class ICal
          */
         $pattern  = '/\AT?Z?I?D?=?(.*):?'; // [1]: Time zone
         $pattern .= '([0-9]{4})';          // [2]: YYYY
-        $pattern .= '([0-9]{2})';          // [3]: MM
-        $pattern .= '([0-9]{2})';          // [4]: DD
+        $pattern .= '([0-9]{1,2})';          // [3]: MM
+        $pattern .= '([0-9]{1,2})';          // [4]: DD
         $pattern .= 'T?';                  //      Time delimiter
         $pattern .= '([0-9]{0,2})';        // [5]: HH
         $pattern .= '([0-9]{0,2})';        // [6]: MM
